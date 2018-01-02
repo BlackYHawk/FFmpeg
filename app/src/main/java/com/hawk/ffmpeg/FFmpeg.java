@@ -18,4 +18,6 @@ public class FFmpeg {
     }
 
     public native void showFFmpegInfo();
+
+    public native int decoder(String inputurl, String outputurl);
 }
