@@ -11,15 +11,10 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
-                cppFlags "-frtti -fexceptions"
+                cppFlags "-std=c++11 -frtti -fexceptions"
             }
-            ndk {
-                abiFilters "armeabi"
-            }
-        }
-        sourceSets {
-            main {
-                jniLibs.srcDirs = ['src/main/jni/ffmpeg']
+            ndk{
+                abiFilters "armeabi","armeabi-v7a","arm64-v8a","x86","x86_64"
             }
         }
     }

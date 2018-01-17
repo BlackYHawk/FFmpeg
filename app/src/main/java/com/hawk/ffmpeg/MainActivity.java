@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         String folderurl = Environment.getExternalStorageDirectory().getPath();
         ffmplayer = new FFmpeg();
       //  ffmplayer.showFFmpegInfo();
-        ffmplayer.decoder(folderurl+"/"+"Titanic.mkv", folderurl+"/"+"Titanic.yuv");
+        ffmplayer.decoder(folderurl+"/"+"test.mp4", folderurl+"/"+"Titanic.yuv");
     }
 
 }
